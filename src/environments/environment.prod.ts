@@ -5,7 +5,7 @@ export const environment = {
     authDomain: "oshop-fe5df.firebaseapp.com",
     databaseURL: "https://oshop-fe5df.firebaseio.com",
     projectId: "oshop-fe5df",
-    storageBucket: "",
+    storageBucket: "oshop-fe5df.appspot.com",
     messagingSenderId: "217664140603"
   }
 };
