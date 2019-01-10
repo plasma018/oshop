@@ -24,14 +24,14 @@ export class ProductService {
   }
 
   get(productId) {
-    return this.db.object('/products/' + productId)
+    return this.db.object('/products/' + productId);
   }
 
   update(productId, product) {
-    return this.db.object('/products/' + productId).update(product)
+    return this.db.object('/products/' + productId).update(product);
   }
 
   delete(productId) {
-    this.db.object('/products/' + productId).remove()
+    this.db.object('/products/' + productId).remove();
   }
 }
