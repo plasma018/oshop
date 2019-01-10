@@ -1,14 +1,10 @@
 <div class="row">
   <div class="col-3">
-    <ul class="list-group">
-      <li *ngFor="let c of categories$ | async" class="list-group-item">
-        {{c.name}}
-      </li>
-    </ul>
+    <app-product-filter [category]="category"></app-product-filter>
   </div>
   <div class="col">
     <div class="row">
-      <ng-container *ngFor="let p of products$ | async; let i = index">
+      <ng-container *ngFor="let p of filteredProducts; let i = index">
         <div class="col">
           <div class="card" style="width: 15rem;">
             <img [src]="p.imageUrl" alt="Card image cap" class="card-img-top">
